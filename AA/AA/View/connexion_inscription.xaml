@@ -1,0 +1,26 @@
+﻿<Window x:Class="AA.View.connexion_inscription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AA.View"
+        mc:Ignorable="d"
+        Title="Se connecter" Height="450" Width="800" WindowState="Maximized">
+
+    <Grid DataContext="{Binding .}">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Pseudo" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
+            <TextBox x:Name="pseudo"  HorizontalAlignment="Center" Width="100"/>
+
+            <Label Content="Mot de passe" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,20,0,0"/>
+            <PasswordBox x:Name="password"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="100"/>
+            <WrapPanel>
+                <Button Background="Green" BorderBrush="Green" Content="Valider" Margin="0,30,0,0" Click="Button_Click_Connect" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Width="20"></TextBlock>
+                <Button Background="#ff4500" BorderBrush="#ff4500" Content="Inscription" Margin="0,30,0,0" Click="Button_Click_Inscriptioon" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Width="20"></TextBlock>
+                <Button Background="red" BorderBrush="red" Content="Quitter" Margin="0,30,0,0" Click="quit" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

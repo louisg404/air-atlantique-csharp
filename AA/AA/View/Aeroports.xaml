@@ -1,0 +1,22 @@
+﻿<Page x:Class="AA.View.Aeroports"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AA.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Aeroports">
+
+    <Grid HorizontalAlignment="Right" x:Name="magrid">
+        <DataGrid Name="dataGrid1" ItemsSource="{Binding}" AutoGenerateColumns="False" BorderBrush="Black">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Libelle" Binding="{Binding LibelleProperty}" Width="*"/>
+                <DataGridTextColumn Header="Code AITA" Binding="{Binding AitaProperty}" Width="*"/>
+                <DataGridTextColumn Header="Ville" Binding="{Binding VilleProperty}" Width="*"/>
+                <DataGridTextColumn Header="Pays" Binding="{Binding PaysProperty}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    
+</Page>

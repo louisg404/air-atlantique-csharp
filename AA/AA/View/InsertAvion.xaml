@@ -1,0 +1,42 @@
+﻿<Page x:Class="AA.View.InsertAvion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AA.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InsertAvion">
+
+    <Grid DataContext="{Binding .}">
+        <StackPanel Margin="50,25,0,0">
+            <Label Content="Matricule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="matricule" Text="{Binding matricule}" HorizontalAlignment="Left" Width="100"/>
+            
+            <Label Content="Motorisation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="motorisation" Text="{Binding motorisation}" HorizontalAlignment="Left" Width="100"/>
+
+            <Label Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="type" Text="{Binding type}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+
+            <Label Content="Capacité" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="capacite" Text="{Binding capacite}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+
+            <Label Content="Première" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="premiere" Text="{Binding premiere}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+
+            <Label Content="Business" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="business" Text="{Binding business}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+
+            <Label Content="Premium" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="premium" Text="{Binding premium}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+
+            <Label Content="Economique" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250"></Label>
+            <TextBox x:Name="economique" Text="{Binding economique}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100"/>
+            
+            <Button Background="#ff4500" BorderBrush="#ff4500" Foreground="White" Content="Valider" Margin="0,30,0,0" Click="Button_Click_Insert_Avion" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </Grid>
+   
+
+</Page>

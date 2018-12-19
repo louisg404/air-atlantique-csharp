@@ -1,0 +1,22 @@
+﻿<Page x:Class="AA.View.Client"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AA.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Clients">
+
+    <Grid>
+        <DataGrid Name="dataGrid1" ItemsSource="{Binding}" AutoGenerateColumns="False" BorderBrush="Black">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom" Binding="{Binding NomProperty}" Width="*"/>
+                <DataGridTextColumn Header="Prénom" Binding="{Binding PrenomProperty}" Width="*"/>
+                <DataGridTextColumn Header="Pseudo" Binding="{Binding PseudoProperty}" Width="*"/>
+                <DataGridTextColumn Header="Adresse mail" Binding="{Binding MailProperty}" Width="*"/>
+                <DataGridTextColumn Header="Mot de passe" Binding="{Binding PasswordProperty}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
